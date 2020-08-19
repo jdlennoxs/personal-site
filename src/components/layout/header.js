@@ -1,13 +1,18 @@
 import { Link } from "gatsby"
 import React from "react"
+import tw from 'twin.macro'
+
+const Header = tw.header`
+  flex
+  flex-col
+  justify-center
+  h-full 
+  space-y-5
+  bg-red-800
+`
 
 export default () => (
-  <header
-    style={{
-      background: `rebeccapurple`,
-      marginBottom: `1.45rem`,
-    }}
-  >
+  <Header>
     <div
       style={{
         margin: `0 auto`,
@@ -27,5 +32,5 @@ export default () => (
         </Link>
       </h1>
     </div>
-  </header>
+  </Header>
 )
